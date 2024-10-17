@@ -1,0 +1,16 @@
+# Apple News
+DOMAIN,gateway.icloud.com,Apple News
+DOMAIN,gspe1-ssl.ls.apple.com,Apple News
+DOMAIN-SUFFIX,apple.news,Apple News
+DOMAIN,apple.comscoreresearch.com,Apple News
+DOMAIN,news-client.apple.com,Apple News
+DOMAIN,news-events.apple.com,Apple News
+DOMAIN,news-edge.apple.com,Apple News
+DOMAIN,news-todayconfig-edge.apple.com,Apple News
+DOMAIN,news-sports-events.apple.com,Apple News
+DOMAIN,news-client-search.apple.com,Apple News
+DOMAIN,news-app-events.apple.com,Apple News
+DOMAIN,newsletter-edge.apple.com,Apple News
+DOMAIN-SUFFIX,smoot.apple.com,Apple News
+DOMAIN,news-assets.apple.com,Apple News
+DOMAIN,c.apple.news,Apple News

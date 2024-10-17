@@ -9,7 +9,11 @@
 #!system=iOS, iPadOS
 #!system_version = 
 #!loon_version = 
-#!date=2024-10-15 21:30:00
+<<<<<<< HEAD
+#!date=2024-09-30 22:00:00
+=======
+#!date=2024-10-08 10:50:00
+>>>>>>> fmz200/wool_scripts.git/main
 #!support=支持约511款APP/小程序
 #!remark=下方的所有规则都标注了对应的hostname，可能存在错误或者遗漏，欢迎反馈。对于无法/可选MITM的hostname都特别做了“如开启可自行添加主机名”提示，如果提示后面没有标注主机名则包含所有主机名，否则只包含提示语后面的主机名。
 #############################################
@@ -1281,7 +1285,7 @@ https?:\/\/awg\.enmonster\.com\/apa\/(advert\/demand\/home\/poster|index\/advert
 # 开屏广告干净了,有小部分误杀
 #^https?:\/\/jiucaigongshe\.oss-cn-beijing\.aliyuncs\.com\/.*.png reject-200
 # 开屏倒计时还在,没有误杀
-#^https?:\/\/jiucaigongshe\.oss-cn-beijing\.aliyuncs\.com\/[A-Z0-9]{8}-[A-Z0-9]{4}-[A-Z0-9]{4}-[A-Z0-9]{4}-[A-Z0-9]{12}\.png reject-200
+^https?:\/\/jiucaigongshe\.oss-cn-beijing\.aliyuncs\.com\/[A-Z0-9]{8}-[A-Z0-9]{4}-[A-Z0-9]{4}-[A-Z0-9]{4}-[A-Z0-9]{12}\.png reject-200
 
 # > 机核网
 # hostname = www.gcores.com
@@ -2763,8 +2767,8 @@ https://mgesq.api.mgtv.com/v2/user/center/icon reject-dict
 # 感谢【派大星，ZenMoFiShi，sliverkissm】分享
 # 去广告（这个域名其实已经在分流中拒绝）
 ^https?:\/\/zlsdk\.1rtb\.net\/sdk\/req_ad reject-dict
-# 红包推广 因为Loon没有url-and-header这种匹配方式，此条可能会导致软件异常
-#^https:\/\/gw\.xiaocantech\.com\/rpc reject-dict
+# 红包推广
+^https:\/\/gw\.xiaocantech\.com\/rpc reject-dict
 # 首页横幅推广
 ^https:\/\/web2\.realtech-inc\.com\/oss\/xc-app-assets\/configs\/common\/theme\.json reject-dict
 # 开屏广告
@@ -2859,8 +2863,8 @@ https://mgesq.api.mgtv.com/v2/user/center/icon reject-dict
 
 # > 闲鱼
 # hostname = acs.m.goofish.com, g-acs.m.goofish.com, dinamicx.alibabausercontent.com
-# 拦截广告下发 因为Loon没有url-and-header这种匹配方式，此条可能会导致软件异常
-#^http:\/\/amdc\.m\.taobao\.com\/amdc\/mobileDispatch reject
+# 拦截广告下发
+^http:\/\/amdc\.m\.taobao\.com\/amdc\/mobileDispatch reject
 # 我的页面横幅
 ^https:\/\/dinamicx\.alibabausercontent\.com\/pub\/fish_home_top_kingkong_new\/ reject
 # 搜索页面净化
@@ -3774,7 +3778,7 @@ http-response ^https?:\/\/j1\.pupuapi\.com\/client\/marketing\/banner\/v7\?posit
 # >>>>>>>>>>>>>>> ✅ Q ✅ <<<<<<<<<<<<<<
 # > 起点读书
 # 起点开屏页广告,每日导读去除,冷启动强制跳转精选页去除,去除发现页弹出的活动弹窗,去除下方(精选 发现 中间的)活动时的tab,去除书架右下角的活动/广告的悬浮icon,搜索页可以搜索用户
-#http-response ^https?:\/\/magev6\.if\.qidian\.com\/argus\/api\/(v4\/client\/getsplashscreen|v2\/deeplink\/geturl|v1\/(client\/getconf|adv\/getadvlistbatch\?positions=iOS_tab|dailyrecommend\/getdailyrecommend)) script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/qidian.js, requires-body=true, timeout=60, tag=起点读书
+http-response ^https?:\/\/magev6\.if\.qidian\.com\/argus\/api\/(v4\/client\/getsplashscreen|v2\/deeplink\/geturl|v1\/(client\/getconf|adv\/getadvlistbatch\?positions=iOS_tab|dailyrecommend\/getdailyrecommend)) script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/qidian.js, requires-body=true, timeout=60, tag=起点读书
 
 # > 去哒
 # 首页开屏广告 感谢【德克萨斯】分享
