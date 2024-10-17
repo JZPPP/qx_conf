@@ -79,7 +79,11 @@ proxy-groups:
   #分流分组
   - { name: 🚀 手动切换, <<: *a2 }
   - { name: 🌏 全球加速, <<: *a3 }
-  - { name: 🍎 苹果服务, <<: *a3 }
+  - { name: ♻️ 自动选择, <<: *a4 }
+
+  - { name: 🏫 校园网络, <<: *a3 }
+  - { name: 🐟 兜底分流, <<: *a3 }
+
   - {
       name: 📺 哔哩哔哩,
       type: select,
@@ -88,15 +92,16 @@ proxy-groups:
   - { name: 🤖 OpenAi, type: select, proxies: [🇺🇲 美国节点] }
   - { name: 🎬 国际媒体, <<: *a3 }
   - { name: 🌌 谷歌服务, <<: *a3 }
+  - { name: 🍎 苹果服务, <<: *a3 }
   - { name: 📟 电报消息, <<: *a3 }
   - { name: 🐦 推特服务, <<: *a3 }
   - { name: 🎮 游戏平台, <<: *a3 }
   - { name: 🆎 AdBlock, type: select, proxies: [REJECT] }
-  - { name: 🐟 兜底分流, <<: *a3 }
-  - { name: 🏫 校园网络, <<: *a3 }
+
+
 
   #节点分组
-  - { name: ♻️ 自动选择, <<: *a4 }
+
   - { name: 🇭🇰 香港节点, <<: *a4, filter: "港|HK|(?i)Hong" } # a4更改为a2，即为手动选择
   - { name: 🇯🇵 日本节点, <<: *a4, filter: "日|东京|JP|(?i)Japan" } # a4更改为a2，即为手动选择
   - { name: 🇨🇳 台湾节点, <<: *a4, filter: "台|湾|TW|(?i)Taiwan" } # a4更改为a2，即为手动选择
@@ -180,7 +185,7 @@ rule-providers:
   School:
     {
       <<: *a6,
-      url: https://raw.githubusercontent.com/JZPPP/qx_conf/main/external/blackmatrix7/ios_rule_script/rule/Clash/Game/School.yaml,
+      url: https://raw.githubusercontent.com/JZPPP/qx_conf/main/external/blackmatrix7/ios_rule_script/rule/Clash/School/School.yaml,
       path: ./ruleset/School.yaml,
     }
   ProxyLite:
