@@ -152,11 +152,11 @@ rule-providers:
       url: https://raw.githubusercontent.com/JZPPP/qx_conf/main/external/blackmatrix7/ios_rule_script/rule/Clash/GitHub/GitHub.yaml,
       path: ./ruleset/Github.yaml,
     }
-  Microsoft:
+  Bing:
     {
       <<: *a6,
-      url: https://raw.githubusercontent.com/JZPPP/qx_conf/main/external/blackmatrix7/ios_rule_script/rule/Clash/Microsoft/Microsoft.yaml,
-      path: ./ruleset/Microsoft.yaml,
+      url: https://raw.githubusercontent.com/JZPPP/qx_conf/main/external/blackmatrix7/ios_rule_script/rule/Clash/Bing/Bing.yaml,
+      path: ./ruleset/Bing.yaml,
     }
   Google:
     {
@@ -228,7 +228,7 @@ rules:
   - RULE-SET,GlobalMedia,🎬 国际媒体
   - RULE-SET,Apple,🍎 苹果服务
   - RULE-SET,Github,🌏 全球加速
-  - RULE-SET,Microsoft, 🌏 全球加速
+  - RULE-SET,Bing, 🌏 全球加速
   - RULE-SET,Google,🌌 谷歌服务
   - RULE-SET,Telegram,📟 电报消息
   - RULE-SET,Twitter,🌏 全球加速
