@@ -1,0 +1,16 @@
+# NAME: Game
+# AUTHOR: blackmatrix7
+# REPO: https://github.com/blackmatrix7/ios_rule_script
+# UPDATED: 2024-10-17 02:11:18
+# DOMAIN: 9
+# DOMAIN-KEYWORD: 4
+# DOMAIN-SUFFIX: 524
+# IP-CIDR: 46
+# TOTAL: 583
+payload:
+  - DOMAIN-SUFFIX,bilibili.net
+
+
+  # - DOMAIN,eaasserts-a.akamaihd.net
+  # - DOMAIN-SUFFIX,battle.net
+  # - IP-CIDR,24.105.62.129/32

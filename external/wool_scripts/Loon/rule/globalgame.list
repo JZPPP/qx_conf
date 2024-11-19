@@ -1,0 +1,7 @@
+#一些国际服游戏分流
+#碧蓝日服
+DOMAIN-SUFFIX, azurlane.jp, proxy
+#米家游戏
+DOMAIN-SUFFIX, hoyolab.com, proxy
+DOMAIN-SUFFIX, hoyoverse.com, proxy
+DOMAIN-SUFFIX, zenlesszonezero.com, proxy
