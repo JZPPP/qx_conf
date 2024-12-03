@@ -1,9 +1,0 @@
-https://github.com/fmz200/wool_scripts.git main
-https://github.com/ddgksf2013/Rewrite.git master
-https://github.com/Sliverkiss/QuantumultX.git main
-https://github.com/Koolson/Qure.git master
-https://github.com/KOP-XIAO/QuantumultX/ master
-https://github.com/blackmatrix7/ios_rule_script.git master
-https://github.com/ddgksf2013/Filter.git master
-https://github.com/app2smile/rules.git master
-https://github.com/VirgilClyne/iRingo.git main
