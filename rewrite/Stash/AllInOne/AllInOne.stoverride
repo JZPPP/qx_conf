@@ -1,15 +1,15 @@
 name: AllInOne
-desc: 最后更新时间 2024-11-28 02:16:51
+desc: 最后更新时间 2024-12-17 02:16:59
 # author: blackmatrix7
 # repo: https://github.com/blackmatrix7/ios_rule_script
 # domain: 5
 # http-request-script: 1
 # http-response-script: 25
 # redirect: 8
-# reject: 706
-# mitm: 742
+# reject: 708
+# mitm: 746
 # force-http-engine-hosts: 6
-# total: 1493
+# total: 1499
 
 
 
@@ -265,6 +265,7 @@ http:
     - ^https?:\/\/api\.wfdata\.club\/v2\/yesfeng\/(infoCenterAd|yesList) - reject
     - ^https?:\/\/api\.wmpvp\.com\/api\/v\d\/config\/promote - reject
     - ^https?:\/\/api\.xiachufang\.com\/v\d\/ad/ - reject
+    - ^https?:\/\/api\.xiaoheihe\.cn\/.*get_ads_info - reject
     - ^https?:\/\/api\.xiaoyi\.com\/v5\/app\/config\?userid=.* - reject
     - ^https?:\/\/api\.xiaoyi\.com\/v5\/app\/mobile\/ads - reject
     - ^https?:\/\/api\.xueqiu\.com\/brand\/search\/v1\.json - reject
@@ -274,6 +275,7 @@ http:
     - ^https?:\/\/api\.yizhibo\.com\/common\/api\/(api_)?pz$ - reject
     - ^https?:\/\/api\.yonghuivip\.com\/web\/shensuan\/ad\/getAd - reject
     - ^https?:\/\/api\.ys7\.com.*\/getAdvertising - reject
+    - ^https?:\/\/api\.zcool\.com\.cn\/.*common\/open-screen - reject
     - ^https?:\/\/api\.zhihu\.com\/(notifications\/v\d\/count) - reject
     - ^https?:\/\/api\.zhihu\.com\/ab\/api\/v1\/products\/zhihu\/platforms\/ios\/config - reject
     - ^https?:\/\/api\.zhihu\.com\/ad-style-service\/request - reject
@@ -1075,6 +1077,7 @@ http:
     - "api.kuaidihelp.com"
     - "api.kurobbs.com"
     - "api.laifeng.com"
+    - "api.livelab.com.cn"
     - "api.m.jd.com"
     - "api.m.mi.com"
     - "api.maoyan.com"
@@ -1109,6 +1112,7 @@ http:
     - "api.wfdata.club"
     - "api.wmpvp.com"
     - "api.xiachufang.com"
+    - "api.xiaoheihe.cn"
     - "api.xiaoyi.com"
     - "api.xueqiu.com"
     - "api.yangkeduo.com"
@@ -1116,6 +1120,7 @@ http:
     - "api.yizhibo.com"
     - "api.yonghuivip.com"
     - "api.ys7.com"
+    - "api.zcool.com.cn"
     - "api.zhihu.com"
     - "api.zhuishushenqi.com"
     - "api1.34580.com"
@@ -1458,6 +1463,7 @@ http:
     - "peisongapi.meituan.com"
     - "pic*.ajkimg.com"
     - "pic.edaijia.cn"
+    - "pinggai*.caixin.com"
     - "pipi.4kya.com"
     - "plt.yorentown.com"
     - "portal-xunyou.qingcdn.com"
