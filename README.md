@@ -12,8 +12,10 @@
 本仓库主要用于收集和整理各位大佬写的脚本，以便能够快速找到所需要的项目，更好地服务于QuantumultX软件的使用者。本仓库仅负责整理链接订阅，没有任何的脚本文件，所以请不要Fork。如果你对本项目有任何意见，请在issue上提出。Thank you～
 
 ### 安装链接
-
-[脚本自助查询](http://sliverkiss.free.hr/QuantumultX/)｜[任务仓库订阅](https://gist.githubusercontent.com/Sliverkiss/a7496bd073820942b44a9b36874aaf4c/raw/sliverkiss.gallery.json)｜[boxjs订阅](https://gist.githubusercontent.com/Sliverkiss/18bd01be356360a8065a21ea71685ad3/raw/sliverkiss.boxjs.json)｜[icon图标集](https://raw.githubusercontent.com/Sliverkiss/QuantumultX/main/sliverkiss.icons.json)
+- [脚本自助查询](http://sliverkiss.free.hr/QuantumultX/)：等待修复 🟡 
+- [任务仓库订阅](https://quantumult.app/x/open-app/ui?module=gallery&type=task&action=add&content=%5B%0A%20%20%20%20%22https%3A%2F%2Fgithub.arka.us.kg%2FSliverkiss%2Fwaf%2Fmain%2Fsliverkiss.gallery.json%22%0A%5D)：点击一键导入 🟢
+- [boxjs订阅](https://gist.githubusercontent.com/Sliverkiss/18bd01be356360a8065a21ea71685ad3/raw/sliverkiss.boxjs.json)：正常可用 🟢
+- [icon图标集](https://raw.githubusercontent.com/Sliverkiss/QuantumultX/main/sliverkiss.icons.json)：正常可用 🟢
 
 ### 脚本列表(兼容NE/Node环境)
 
