@@ -151,11 +151,11 @@ function QingLong(HOST, Client_ID, Client_Secret) {
                     throw message || `Failed to obtain the environment variable.`;
                 }
             } catch (e) {
-                $.log(e
+                throw e
                     ? typeof e === "object"
                         ? JSON.stringify(e)
                         : e
-                    : "Network Error.");
+                    : "Network Error.";
             }
         }
 
@@ -210,11 +210,11 @@ function QingLong(HOST, Client_ID, Client_Secret) {
                     throw message || "Failed to add the environment variable.";
                 }
             } catch (e) {
-                $.log(e
+                throw e
                     ? typeof e === "object"
                         ? JSON.stringify(e)
                         : e
-                    : "Network Error.");
+                    : "Network Error.";
             }
         }
         /**
@@ -240,11 +240,11 @@ function QingLong(HOST, Client_ID, Client_Secret) {
                     throw message || "Failed to update the environment variable.";
                 }
             } catch (e) {
-                $.log(e
+                throw e
                     ? typeof e === "object"
                         ? JSON.stringify(e)
                         : e
-                    : "Network Error.");
+                    : "Network Error.";
             }
         }
         /**
@@ -269,11 +269,11 @@ function QingLong(HOST, Client_ID, Client_Secret) {
                     throw message || "Failed to delete the environment variable.";
                 }
             } catch (e) {
-                $.log(e
+                throw e
                     ? typeof e === "object"
                         ? JSON.stringify(e)
                         : e
-                    : "Network Error.");
+                    : "Network Error.";
             }
         }
         /**
@@ -282,7 +282,7 @@ function QingLong(HOST, Client_ID, Client_Secret) {
          */
         async enableEnv(ids) {
             const options = {
-                url: `${this.host}/open/envs/enable`,
+                url: `${this.host}open/envs/enable`,
                 method: "put",
                 headers: {
                     Authorization: `${this.token}`,
@@ -298,41 +298,11 @@ function QingLong(HOST, Client_ID, Client_Secret) {
                     throw message || "Failed to enable the environment variable.";
                 }
             } catch (e) {
-                $.log(e
+                throw e
                     ? typeof e === "object"
                         ? JSON.stringify(e)
                         : e
-                    : "Network Error.");
-            }
-        }
-        
-        /**
-         * 关闭环境变量
-         * @param {*} ids [0,1,2] -> id数组
-         */
-        async disableEnv(ids) {
-            const options = {
-                url: `${this.host}/open/envs/disable`,
-                method: "put",
-                headers: {
-                    Authorization: `${this.token}`,
-                    "Content-Type": "application/json;charset=UTF-8",
-                },
-                body: JSON.stringify(ids),
-            };
-            try {
-                const { code, message } = await Request(options, "post");
-                if (code === 200) {
-                    $.log(`✅The environment variable was disable successfully.`);
-                } else {
-                    throw message || "Failed to enable the environment variable.";
-                }
-            } catch (e) {
-                $.log(e
-                    ? typeof e === "object"
-                        ? JSON.stringify(e)
-                        : e
-                    : "Network Error.");
+                    : "Network Error.";
             }
         }
         /**
@@ -342,7 +312,7 @@ function QingLong(HOST, Client_ID, Client_Secret) {
          */
         async getEnvById(id) {
             const options = {
-                url: `${this.host}/open/envs/${id}`,
+                url: `${this.host}open/envs/${id}`,
                 headers: {
                     Authorization: `${this.token}`,
                 },
@@ -355,11 +325,11 @@ function QingLong(HOST, Client_ID, Client_Secret) {
                     throw message || `Failed to get the environment variable.`;
                 }
             } catch (e) {
-                $.log(e
+                throw e
                     ? typeof e === "object"
                         ? JSON.stringify(e)
                         : e
-                    : "Network Error.");
+                    : "Network Error.";
             }
         }
     })(HOST, Client_ID, Client_Secret);
