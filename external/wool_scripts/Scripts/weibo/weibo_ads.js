@@ -1,7 +1,11 @@
 /**
  * @author fmz200
  * @function 微博去广告
+<<<<<<< HEAD
  * @date 2024-12-16 20:40:00
+=======
+ * @date 2025-03-26 07:45:00
+>>>>>>> b88583175799f64cb7c6458c2ca60fb87e5372ef
  */
 
 let url = $request.url;
@@ -50,7 +54,17 @@ try {
 
     // 5、微博详情页面
     if (url.includes("/statuses/extend?")) {
+<<<<<<< HEAD
       resp_data.head_cards = [];
+=======
+      delete resp_data.head_cards;
+      delete resp_data.top_cards;
+      delete resp_data.extend_info;
+      delete resp_data.semantic_brand_params;
+      delete resp_data.ad_tag_nature;
+      delete resp_data.title_source;
+      delete resp_data.reward_info;
+>>>>>>> b88583175799f64cb7c6458c2ca60fb87e5372ef
       console.log('处理微博详情页面广告结束💕💕');
     }
 
