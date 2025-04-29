@@ -1,11 +1,11 @@
 name: 复写去广告(严格版)
-desc: 最后更新时间 2025-03-27 02:17:59
+desc: 最后更新时间 2025-04-15 02:18:04
 # author: blackmatrix7
 # repo: https://github.com/blackmatrix7/ios_rule_script
-# reject: 1195
-# mitm: 884
+# reject: 1202
+# mitm: 889
 # force-http-engine-hosts: 6
-# total: 2085
+# total: 2097
 
 
 
@@ -145,6 +145,10 @@ http:
     - ^https?:\/\/4gimg\.map\.qq\.com\/mwaSplash\/ - reject
     - ^https?:\/\/789\.kakamobi\.cn\/.+?adver - reject
     - ^https?:\/\/[\s\S]*\.baidu\.com/.*?ad[xs]\.php - reject
+    - ^https?:\/\/[a-zA-Z0-9_-]+\.admobile.top\/ - reject
+    - ^https?:\/\/[a-zA-Z0-9_-]+\.ranfenghd\.com\/ad - reject
+    - ^https?:\/\/[a-zA-Z0-9_-]+\.tianmu\.mobi\/ad - reject
+    - ^https?:\/\/[a-zA-Z0-9_-]+\.weathercn\.com\/(.*bypage|appindexicon) - reject
     - ^https?:\/\/[a-z]*\.rsscc\.com\/[a-z]*\/adver - reject
     - ^https?:\/\/\w+\.58cdn\.com\.cn\/brandads\/ - reject
     - ^https?:\/\/\w+\.beacon\.qq\.com - reject
@@ -192,6 +196,7 @@ http:
     - ^https?:\/\/adui\.tg\.meitu\.com - reject
     - ^https?:\/\/adv\.ccb\.com\/ebda\/ctm_adv - reject
     - ^https?:\/\/adx-cn\.anythinktech\.com\/bid - reject
+    - ^https?:\/\/adx\.zuoyebang\.com\/adxserver\/ - reject
     - ^https?:\/\/aes\.acfun\.cn\/s\?adzones - reject
     - ^https?:\/\/afd\.baidu\.com\/afd\/entry - reject
     - ^https?:\/\/agent-count\.pconline\.com\.cn\/counter\/adAnalyse\/ - reject
@@ -637,6 +642,9 @@ http:
     - ^https?:\/\/gw-passenger\.01zhuanche\.com\/gw-passenger\/car-rest\/webservice\/passenger\/recommendADs - reject
     - ^https?:\/\/gw-passenger\.01zhuanche\.com\/gw-passenger\/zhuanche-passenger-token\/leachtoken\/webservice\/homepage\/queryADs - reject
     - ^https?:\/\/gw-passenger\.01zhuanche\.com\/gw-passenger\/zhuanche-passengerController\/notk\/passenger\/recommendADs - reject
+    - ^https?:\/\/gw3\.ykccn\.com\/activityServer\/app\/commandAd - reject
+    - ^https?:\/\/gw3\.ykccn\.com\/api\/omp\/mt\/appAdvertising\/ - reject
+    - ^https?:\/\/gw3\.ykccn\.com\/api\/omp\/mt\/charge\/activity\/package\/newest - reject
     - ^https?:\/\/gw\.aihuishou\.com\/app-portal\/home\/getadvertisement - reject
     - ^https?:\/\/gw\.csdn\.net\/cms-app\/v\d+\/home_page\/open_advertisement - reject
     - ^https?:\/\/gw\.kaola\.com\/gw\/dgmobile\/newOpenAd - reject
@@ -848,7 +856,6 @@ http:
     - ^https?:\/\/mobile-pic\.cache\.iciba\.com\/feeds_ad\/ - reject
     - ^https?:\/\/mobile\.1qianbao\.com\/mtp-web\/ui\/op_common_query_business_yqb\.json - reject
     - ^https?:\/\/mobile\.api\.mgtv\.com\/v2\/mobile\/checkUpdate\? - reject
-    - ^https?:\/\/mobile\.cebbank\.com\/cebclient\/ClientNoticeList - reject
     - ^https?:\/\/mobileapi-v6\.elong\.com\/adgateway\/ - reject
     - ^https?:\/\/mobileapi\.xiamenair\.com\/mobile-starter\/.+\/getStartAD - reject
     - ^https?:\/\/mobileso\.bz\.mgtv\.com\/spotlight\/search\/v1\? - reject
@@ -1096,6 +1103,7 @@ http:
     - ^https?:\/\/wap\.ngchina\.cn\/news\/adverts\/ - reject
     - ^https?:\/\/wap\.spdb\.com\.cn\/mspmk-web-homeassist\/OpenScreenAdv\.ah$ - reject
     - ^https?:\/\/wcprd\.hilton\.com\.cn\/app-middleware\/graphql\?type=splashAd - reject
+    - ^https?:\/\/web-stable-cdn\.ykccn\.com\/sp-img-2023\/common\/weCom-open - reject
     - ^https?:\/\/web\.chelaile\.net\.cn\/api\/adpub\/ - reject
     - ^https?:\/\/webappcfg\.paas\.cmbchina\.com\/v1\/func\/getmarketconfig - reject
     - ^https?:\/\/webboot\.zhangyue\.com\/zyapi\/bookstore\/ad\/ - reject
@@ -1150,7 +1158,6 @@ http:
     - ^https?:\/\/y\.gtimg\.cn\/music\/common\/upload\/t_splash_info\/ - reject
     - ^https?:\/\/y\.gtimg\.cn\/music\/common\/upload\/targeted_ads - reject
     - ^https?:\/\/yanxuan\.nosdn\.127\.net\/.*\.mp4 - reject
-    - ^https?:\/\/yghsh\.cebbank\.com\/static\/picture\/.*.jpg - reject
     - ^https?:\/\/ytmsout\.radio\.cn\/publish\/recScreen\/getLoadPage - reject
     - ^https?:\/\/yun\.tuitiger\.com\/mami-media - reject
     - ^https?:\/\/yunbusiness\.ccb\.com\/clp_service\/txCtrl\?txcode=(A3341A002|A3341A009) - reject
@@ -1228,6 +1235,10 @@ http:
     - "4gimg.map.qq.com"
     - "789.kakamobi.cn"
     - "a-z*.rsscc.com"
+    - "a-zA-Z0-9_-.admobile.top"
+    - "a-zA-Z0-9_-.ranfenghd.com"
+    - "a-zA-Z0-9_-.tianmu.mobi"
+    - "a-zA-Z0-9_-.weathercn.com"
     - "a.line.me"
     - "a.qiumibao.com"
     - "a.sinopecsales.com"
@@ -1262,6 +1273,7 @@ http:
     - "adv.ccb.com"
     - "advertise.bczeducation.cn"
     - "adx-cn.anythinktech.com"
+    - "adx.zuoyebang.com"
     - "aes.acfun.cn"
     - "afd.baidu.com"
     - "agent-count.pconline.com.cn"
@@ -1643,6 +1655,7 @@ http:
     - "gw.kaola.com"
     - "gw.line.naver.jp"
     - "gw.xiaocantech.com"
+    - "gw3.ykccn.com"
     - "gx.10086.cn"
     - "h5api.sginput.qq.com"
     - "h5app.kuwo.cn"
@@ -1803,7 +1816,6 @@ http:
     - "mobile-pic.cache.iciba.com"
     - "mobile.1qianbao.com"
     - "mobile.api.mgtv.com"
-    - "mobile.cebbank.com"
     - "mobile.laichon.com"
     - "mobileapi-v6.elong.com"
     - "mobileapi.ly.com"
@@ -2038,6 +2050,7 @@ http:
     - "wap.ngchina.cn"
     - "wap.spdb.com.cn"
     - "wcprd.hilton.com.cn"
+    - "web-stable-cdn.ykccn.com"
     - "web.chelaile.net.cn"
     - "web2.realtech-inc.com"
     - "webappcfg.paas.cmbchina.com"
@@ -2085,7 +2098,6 @@ http:
     - "xyz.cnki.net"
     - "y.gtimg.cn"
     - "yanxuan.nosdn.127.net"
-    - "yghsh.cebbank.com"
     - "ytmsout.radio.cn"
     - "yun.tuitiger.com"
     - "yunbusiness.ccb.com"
