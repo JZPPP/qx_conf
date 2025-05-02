@@ -75,19 +75,7 @@ proxy-providers:
     path: ./proxy_providers/tmp.yaml
 proxies: null
 
-#==========================================
-# @ConfigName        墨鱼自用Clash配置文件
-# @Author            @ddgksf2013
-# @TgChannel         𝐡𝐭𝐭𝐩𝐬://𝐭.𝐦𝐞/𝐝𝐝𝐠𝐤𝐬𝐟𝟐𝟎𝟐𝟏
-# @WechatID          墨鱼手记
-# @Feedback          💡请通过邮件反馈问题[其它方式一概无视]：𝐝𝐝𝐠𝐤𝐬𝐟𝟐𝟎𝟏𝟑@𝟏𝟔𝟑.𝐜𝐨𝐦 💡
-# @UpdateTime        2024/10/06 17:00 UTC/GMT +8
-# @Function          支持手动选择、自动测速、广告屏蔽、兜底分流、按国家分组节点、多机场订阅等，配置同样适用ClashVerge   
-# @ClashVerge        https://github.com/clash-verge-rev/clash-verge-rev/releases
-# @Thanks            @blackmatrix7, @Fndroid, @Anti
-# @Attention         𝐏𝐥𝐞𝐚𝐬𝐞 𝐮𝐬𝐞 𝐭𝐡𝐞 𝐥𝐚𝐭𝐞𝐬𝐭 𝐯𝐞𝐫𝐬𝐢𝐨𝐧 𝐨𝐟 𝐂𝐥𝐚𝐬𝐡𝐟𝐨𝐫𝐖𝐢𝐧𝐝𝐨𝐰𝐬
-# @ConfigVersion     1.0.22
-#==========================================
+
 
 port: 7890           # HTTP 代理端口
 socks-port: 7891     # Socks 端口
@@ -196,97 +184,97 @@ rule-providers:
   OpenAi:
     {
       <<: *a6,
-      url: https://raw.githubusercontent.com/JZPPP/qx_conf/main/external/blackmatrix7/ios_rule_script/rule/Clash/OpenAI/OpenAI.yaml,
+      url: https://raw.githubusercontent.com/JZPPP/blackmatrix7-ios_rule_script/master/rule/Clash/OpenAI/OpenAI.yaml,
       path: ./ruleset/OpenAi.yaml,
     }
   BiliBili:
     {
       <<: *a6,
-      url: https://raw.githubusercontent.com/JZPPP/qx_conf/main/external/blackmatrix7/ios_rule_script/rule/Clash/BiliBili/BiliBili.yaml,
+      url: https://raw.githubusercontent.com/JZPPP/blackmatrix7-ios_rule_script/master/rule/Clash/BiliBili/BiliBili.yaml,
       path: ./ruleset/BiliBili.yaml,
     }
   Bahamut:
     {
       <<: *a6,
-      url: https://raw.githubusercontent.com/JZPPP/qx_conf/main/external/blackmatrix7/ios_rule_script/rule/Clash/Bahamut/Bahamut.yaml,
+      url: https://raw.githubusercontent.com/JZPPP/blackmatrix7-ios_rule_script/master/rule/Clash/Bahamut/Bahamut.yaml,
       path: ./ruleset/Bahamut.yaml,
     }
   GlobalMedia:
     {
       <<: *a6,
-      url: https://raw.githubusercontent.com/JZPPP/qx_conf/main/external/blackmatrix7/ios_rule_script/rule/Clash/GlobalMedia/GlobalMedia_Classical.yaml,
+      url: https://raw.githubusercontent.com/JZPPP/blackmatrix7-ios_rule_script/master/rule/Clash/GlobalMedia/GlobalMedia_Classical.yaml,
       path: ./ruleset/GlobalMedia.yaml,
     }
   Apple:
     {
       <<: *a6,
-      url: https://raw.githubusercontent.com/JZPPP/qx_conf/main/external/blackmatrix7/ios_rule_script/rule/Clash/Apple/Apple_Classical.yaml,
+      url: https://raw.githubusercontent.com/JZPPP/blackmatrix7-ios_rule_script/master/rule/Clash/Apple/Apple_Classical.yaml,
       path: ./ruleset/Apple.yaml,
     }
   Github:
     {
       <<: *a6,
-      url: https://raw.githubusercontent.com/JZPPP/qx_conf/main/external/blackmatrix7/ios_rule_script/rule/Clash/GitHub/GitHub.yaml,
+      url: https://raw.githubusercontent.com/JZPPP/blackmatrix7-ios_rule_script/master/rule/Clash/GitHub/GitHub.yaml,
       path: ./ruleset/Github.yaml,
     }
   Microsoft:
     {
       <<: *a6,
-      url: https://raw.githubusercontent.com/JZPPP/qx_conf/main/external/blackmatrix7/ios_rule_script/rule/Clash/Microsoft/Microsoft.yaml,
+      url: https://raw.githubusercontent.com/JZPPP/blackmatrix7-ios_rule_script/master/rule/Clash/Microsoft/Microsoft.yaml,
       path: ./ruleset/Microsoft.yaml,
     }
   Google:
     {
       <<: *a6,
-      url: https://raw.githubusercontent.com/JZPPP/qx_conf/main/external/blackmatrix7/ios_rule_script/rule/Clash/Google/Google.yaml,
+      url: https://raw.githubusercontent.com/JZPPP/blackmatrix7-ios_rule_script/master/rule/Clash/Google/Google.yaml,
       path: ./ruleset/Google.yaml,
     }
   Telegram:
     {
       <<: *a6,
-      url: https://raw.githubusercontent.com/JZPPP/qx_conf/main/external/blackmatrix7/ios_rule_script/rule/Clash/Telegram/Telegram.yaml,
+      url: https://raw.githubusercontent.com/JZPPP/blackmatrix7-ios_rule_script/master/rule/Clash/Telegram/Telegram.yaml,
       path: ./ruleset/Telegram.yaml,
     }
   Twitter:
     {
       <<: *a6,
-      url: https://raw.githubusercontent.com/JZPPP/qx_conf/main/external/blackmatrix7/ios_rule_script/rule/Clash/Twitter/Twitter.yaml,
+      url: https://raw.githubusercontent.com/JZPPP/blackmatrix7-ios_rule_script/master/rule/Clash/Twitter/Twitter.yaml,
       path: ./ruleset/Twitter.yaml,
     }
   Game:
     {
       <<: *a6,
-      url: https://raw.githubusercontent.com/JZPPP/qx_conf/main/external/blackmatrix7/ios_rule_script/rule/Clash/Game/Game.yaml,
+      url: https://raw.githubusercontent.com/JZPPP/blackmatrix7-ios_rule_script/master/rule/Clash/Game/Game.yaml,
       path: ./ruleset/Game.yaml,
     }
   School:
     {
       <<: *a6,
-      url: https://raw.githubusercontent.com/JZPPP/qx_conf/main/external/blackmatrix7/ios_rule_script/rule/Clash/School/School.yaml,
+      url: https://raw.githubusercontent.com/JZPPP/blackmatrix7-ios_rule_script/master/rule/Clash/School/School.yaml,
       path: ./ruleset/School.yaml,
     }
   ProxyLite:
     {
       <<: *a6,
-      url: https://raw.githubusercontent.com/JZPPP/qx_conf/main/external/blackmatrix7/ios_rule_script/rule/Clash/ProxyLite/ProxyLite.yaml,
+      url: https://raw.githubusercontent.com/JZPPP/blackmatrix7-ios_rule_script/master/rule/Clash/ProxyLite/ProxyLite.yaml,
       path: ./ruleset/ProxyLite.yaml,
     }
   Direct:
     {
       <<: *a6,
-      url: https://raw.githubusercontent.com/JZPPP/qx_conf/main/external/blackmatrix7/ios_rule_script/rule/Clash/Direct/Direct.yaml,
+      url: https://raw.githubusercontent.com/JZPPP/blackmatrix7-ios_rule_script/master/rule/Clash/Direct/Direct.yaml,
       path: ./ruleset/Direct.yaml,
     }
   Lan:
     {
       <<: *a6,
-      url: https://raw.githubusercontent.com/JZPPP/qx_conf/main/external/blackmatrix7/ios_rule_script/rule/Clash/Lan/Lan.yaml,
+      url: https://raw.githubusercontent.com/JZPPP/blackmatrix7-ios_rule_script/master/rule/Clash/Lan/Lan.yaml,
       path: ./ruleset/Lan.yaml,
     }
   Download:
     {
       <<: *a6,
-      url: https://raw.githubusercontent.com/JZPPP/qx_conf/main/external/blackmatrix7/ios_rule_script/rule/Clash/Download/Download.yaml,
+      url: https://raw.githubusercontent.com/JZPPP/blackmatrix7-ios_rule_script/master/rule/Clash/Download/Download.yaml,
       path: ./ruleset/Download.yaml,
     }
   ChinaIP:
